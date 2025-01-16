@@ -8,6 +8,7 @@ An LLM-powered tool for discovering and analyzing research papers. LLMScout help
 - 📚 Automated paper search on arXiv
 - 📊 Intelligent paper analysis and summarization
 - 📥 Batch paper downloading
+- 📝 Zotero integration for paper management
 - 📝 Detailed logging and progress tracking
 - ⏸️ Resume capability for interrupted operations
 
@@ -73,7 +74,30 @@ OPENAI_MAX_TOKENS=1000          # Default: 1000
 OUTPUT_DIR=./results            # Default: ./results
 DOWNLOAD_DIR=./papers          # Default: ./papers
 LOG_DIR=./logs                 # Default: ./logs
+
+# Zotero configuration (optional)
+ZOTERO_LIBRARY_ID=your_library_id
+ZOTERO_API_KEY=your_api_key
+ZOTERO_LIBRARY_TYPE=user  # or 'group'
+ZOTERO_COLLECTION=LLMScout  # default collection name
 ```
+
+## Zotero Integration
+
+LLMScout can automatically add downloaded papers to your Zotero library. To use this feature:
+
+1. Get your Zotero library ID:
+   - Go to [Zotero Web Library](https://www.zotero.org/settings/keys)
+   - Your library ID is shown in the URL when viewing your library
+
+2. Create a Zotero API key:
+   - Go to [Zotero Settings > API Keys](https://www.zotero.org/settings/keys/new)
+   - Create a new key with read/write permissions
+   - Save the generated API key
+
+3. Configure LLMScout:
+   - Add your Zotero credentials to `.env` file
+   - Papers will be automatically added to the specified collection
 
 ## Documentation
 
