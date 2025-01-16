@@ -1,7 +1,6 @@
 openai>=1.0.0
-python-dotenv>=1.0.0
 arxiv
-requests>=2.31.0
-pytz
 pyyaml
-pyzotero>=1.5.0
+pytz
+requests>=2.31.0
+python-dotenv>=1.0.0
